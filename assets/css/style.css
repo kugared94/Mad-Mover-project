@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Expletus Sans', cursive;
+
+}
+
+header div {
+    background: #1b262c;
+    height: 90px;
+}
+
+nav {
+    padding-top: 10px;
+    padding-left: 100px;
+    height: 90px;
+    width: 100%;
+}
+
+header {
+    background-image: url("../image/bg1.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    margin-left: 400px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
