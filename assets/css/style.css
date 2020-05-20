@@ -10,26 +10,7 @@ body {
     font-family: 'Expletus Sans', cursive;
 
 }
-
-header div {
-    background: #1b262c;
-    height: 90px;
-}
-
-nav {
-    padding-top: 10px;
-    padding-left: 100px;
-    height: 90px;
-    width: 100%;
-}
-
-header {
-    background-image: url("../image/bg1.png");
-    background-repeat: no-repeat;
-    height: 500px;
-    background-size: 100% 100%;
-    position: relative;
-}
+/*--------------------------------------------------navigation bar */
 
 label.logo{
     color: white;
@@ -40,12 +21,22 @@ label.logo{
 }
 
 nav {
-    text-align: right;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    height: 90px;
+    width: 100%;
+    background: #1b262c;
+    z-index: 1;
 }
 
 nav ul {
-    float: right;
     padding-right: 50px;
+    padding-left: 50px;
 }
 
 nav ul li {
@@ -83,14 +74,42 @@ a.active, a:hover {
     display: none;
 }
 
-@media (max-width: 952px) {
+/*--------------------------------------------------navigation bar */
+/*--------------------------------------------------header */
+
+header {
+    background-image: url("../image/bg1.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/*--------------------------------------------------header */
+/*--------------------------------------------------section index */
+
+.banner-area{
+    position: relative;
+}
+
+
+/*--------------------------------------------------section index */
+@media (max-width: 960px) {
+    nav {
+        position: fixed;
+        padding-top: 10px;
+        height: 10px;
+        width: 100%;
+        height: 90px;
+    }
     label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+        font-size: 25px;
+        padding: 0 25px;
     }
     nav ul li a {
         font-size: 16px;
     }
+    
 }
 
 @media (max-width: 858px) {
@@ -104,13 +123,15 @@ a.active, a:hover {
         height: 100vh;
         background: #1b262c;
         top: 80px;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all .5s;
     }
 
     nav ul li {
         display: block;
+        margin: 50px 0;
+        line-height: 30px;
     }
 
     nav ul li a {
@@ -123,7 +144,15 @@ a.active, a:hover {
     }
 
     #check:checked ~ ul {
-        left: 0;
+        right: 0;
+    }
+
+    header {
+        background-image: url("../image/bg1.png");
+        background-repeat: no-repeat;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
     }
 
 }
