@@ -92,6 +92,7 @@ header {
     height: 500px;
     background-size: 100% 100%;
     position: relative;
+    
 }
 
 /*--------------------------------------------------header */
@@ -140,7 +141,64 @@ p {
 }
 
 
+
 /*--------------------------------------------------section index */
+/*--------------------------------------------------Footer */
+
+footer {
+    background: #1b262c;
+    color: white;
+    height: 300px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 30px 20px;
+}
+
+.box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+}
+
+.left .content p {
+    font-size: 24x;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #d89454;
+}
+
+
+
+
+/*--------------------------------------------------Footer */
 @media (max-width: 960px) {
     nav {
         position: fixed;
