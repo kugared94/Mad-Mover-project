@@ -148,14 +148,15 @@ p {
 footer {
     background: #1b262c;
     color: white;
-    height: 300px;
+    height: 400px;
     bottom: 0px;
     width: 100%;
+    padding: 30px 20px;
 }
 
 .main-content .box {
     flex-basis: 50%;
-    padding: 30px 20px;
+    padding: 30px 50px;
 }
 
 .box h2 {
@@ -195,8 +196,81 @@ footer {
     background: #d89454;
 }
 
+.center .content .fas {
+    font-size: 20px;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
+.center .content .fas:hover {
+    background: #d89454;
+}
 
+.center .content .text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.right form .text {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #656565;
+
+}
+
+.right form .message {
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+    width: 100%;
+    font-size: 20px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus, 
+.right form textarea:focus {
+    outline-color: #d89454;
+}
+
+.right form input {
+    height: 35px;
+} 
+
+.right form .button {
+    margin-top: 10px;
+}
+
+.right form .button button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #d89454;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right form .button button:hover {
+    background: #151515;
+    color: #d89454;
+    border: 1px solid #d89454;
+}
 
 /*--------------------------------------------------Footer */
 @media (max-width: 960px) {
