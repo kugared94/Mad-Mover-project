@@ -102,7 +102,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.home-area, .about-area, .business-area, .careers-area, .contact-area {
+.home-area, .business-area, .careers-area, {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -130,17 +130,45 @@ p {
     line-height: 50px;
 }
 
-.about-area, .careers-area{
+.about-area, .contact-area{
     background: #262626;
     color: white;
     padding: 10px;
 }
 
-.home-area, .business-area, .contact-area {
+.home-area, .business-area, .careers-area {
     background: #fefefe;
 }
 
+/*-------------------------About Area */
 
+.about-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+
+/*-------------------------About Area */
+
+/*-------------------------Contact Area */
+
+.contact-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+
+/*-------------------------Contact Area */
 
 /*--------------------------------------------------section index */
 /*--------------------------------------------------Footer */
@@ -311,7 +339,16 @@ footer {
     background: none;
 }
 
+.footer-logo {
+    font-size: 50px;
+}
+
 /*--------------------------------------------------Footer */
+/*--------------------------------------------------Contact page */
+
+
+
+/*--------------------------------------------------Contact page */
 @media (max-width: 960px) {
     nav {
         position: fixed;
