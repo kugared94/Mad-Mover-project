@@ -10,7 +10,7 @@ function validation(){
   
   var text;
   if(name.length < 5){
-    text = "Please Enter valid Name";
+    text = "Please Enter Fullname";
     error_message.innerHTML = text;
     return false;
   }
@@ -29,8 +29,8 @@ function validation(){
     error_message.innerHTML = text;
     return false;
   }
-  if(message.length <= 50){
-    text = "Please Enter More Than 50 Characters";
+  if(message.length <= 10){
+    text = "Please Enter More Than 10 Characters";
     error_message.innerHTML = text;
     return false;
   }
