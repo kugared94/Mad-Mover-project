@@ -140,7 +140,11 @@ p {
 .home-area, .business-area, .careers-area {
     background: #fefefe;
 }
+/*-------------------------Home Area */
 
+
+
+/*-------------------------Home Area */
 /*-------------------------About Area */
 
 .about-area {
@@ -155,7 +159,134 @@ p {
 }
 
 /*-------------------------About Area */
+/*-------------------------Careers Area */
 
+.careers-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 1700px;
+}
+
+.career-background {
+    background-image: url("../image/bg2.png"); 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.careers-area .text-part {
+    z-index: 2;
+    border: 3px solid #d89454;
+    width: 1500px;
+    position: absolute;
+    height: 1500px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(31, 29, 26, 0.8);
+    padding: 30px 35px;
+    color: white;
+}
+
+.careers-area h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 60px;
+}
+
+.careers-area h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.careers-area p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.careers-area .text-part .sub-background {
+    width: 1490px;
+    position: fixed;
+    top: 62%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    padding: 30px 35px;
+    color: black;
+    height: 850px;
+}
+
+.careers-area .text-part .sub-image {
+    margin-top: 50px;
+}
+
+.careers-area .text-part .sub-background h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.careers-area .text-part .sub-background .col-6 {
+    height: 50px;
+}
+
+.job-list {
+    font-family: 'Open Sans', sans-serif;
+    width: 300px;
+    padding-left: 30px;
+}
+
+.job-list h2 {
+    margin-top: 350px;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.job-list ul {
+    padding-left: 15px;
+    position: relative;
+    background: #fff;
+}
+
+.job-list ul li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    transition: transform 0.5s;
+}
+
+.job-list .row {
+    text-align: center;
+}
+
+.position-head {
+    font-size: 25px;
+    font-weight: 300;
+}
+/*-------------------------Careers Area */
 /*-------------------------Contact Area */
 
 .contact-area {
@@ -174,7 +305,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
     background: #1b262c;
     padding: 25px;
@@ -276,7 +407,7 @@ footer {
 }
 
 .left .content p {
-    font-size: 24px;
+    font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     line-height: 25px;
     text-align: justify;
