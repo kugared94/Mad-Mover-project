@@ -36,7 +36,7 @@ nav {
     z-index: 1;
 }
 
-.nav {
+nav {
     display: flex;
     justify-content: right;
     list-style: none;
@@ -74,7 +74,7 @@ a.active, a:hover {
     color: white;
     float: right;
     line-height: 80px;
-    margin-right: 40px;
+    margin-left: 30px;
     cursor: pointer;
     display: none;
 }
@@ -102,7 +102,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.home-area, .business-area, .careers-area, {
+.home-area, .business-area,{
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -158,115 +158,71 @@ p {
     height: 500px;
 }
 
+.about-area img {
+    width: 400px;
+    height: 300px;
+}
+
 /*-------------------------About Area */
 /*-------------------------Careers Area */
 
-.careers-area {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    height: 1700px;
-}
-
-.career-background {
-    background-image: url("../image/bg2.png"); 
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-
 .careers-area .text-part {
-    z-index: 2;
-    border: 3px solid #d89454;
-    width: 1500px;
-    position: absolute;
-    height: 1500px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(31, 29, 26, 0.8);
-    padding: 30px 35px;
-    color: white;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
 }
 
 .careers-area h1 {
-    margin-top: 30px;
     margin-bottom: 50px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .careers-area h2 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 40px;
+    margin-bottom: 10px;
+    font-size: 35px;
 }
 
 .careers-area p {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-size: 20px;
 }
 
-.careers-area .text-part .sub-background {
-    width: 1490px;
-    position: fixed;
-    top: 62%;
-    left: 51%;
-    transform: translate(-50%, -50%);
-    background: rgb(255, 255, 255);
-    padding: 30px 35px;
-    color: black;
-    height: 850px;
-}
-
-.careers-area .text-part .sub-image {
-    margin-top: 50px;
-}
-
-.careers-area .text-part .sub-background h3 {
-    margin-top: 30px;
+.sub-background h2 {
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 25px;
-    text-align: center;
+    font-size: 35px;
 }
 
-.careers-area .text-part .sub-background .col-6 {
-    height: 50px;
+.sub-background h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #d89454;
+}
+
+.sub-background p {
+    margin-bottom: 60px;
+    font-size: 20px;
 }
 
 .job-list {
     font-family: 'Open Sans', sans-serif;
-    width: 300px;
-    padding-left: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 .job-list h2 {
-    margin-top: 350px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px 20px;
     font-size: 30px;
     font-weight: 700;
 }
 
 .job-list ul {
-    padding-left: 15px;
+    padding-left: 30px;
     position: relative;
     background: #fff;
+    margin-bottom: 100px;
 }
 
 .job-list ul li {
@@ -535,19 +491,26 @@ footer {
 }
 
 /*--------------------------------------------------Footer */
-/*--------------------------------------------------Contact page */
-
-
-
-/*--------------------------------------------------Contact page */
 @media (max-width: 960px) {
+/*-------------------------navigation bar */
+    header{
+        z-index: 5;
+    }
+
     nav {
         position: fixed;
         padding-top: 10px;
-        height: 10px;
         width: 100%;
-        height: 90px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #1b262c;
+        z-index: 1;
     }
+
     label.logo{
         font-size: 25px;
         padding: 0 25px;
@@ -555,44 +518,358 @@ footer {
     nav ul li a {
         font-size: 16px;
     }
-    
+/*-------------------------navigation bar */
+/*-------------------------home area */
+
+/*-------------------------home area */
+/*-------------------------about area */
+    .about-area {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        height: 800px;
+    }
+
+    .about-area h1 {
+    font-size: 35px;
+    font-family: 'Expletus Sans', cursive;
+    }
+
+    .about-area p {
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 30px;
+    }
+
+    .about-area .text-part {
+        margin-top: 50px;
+        width: 85%;
+        height: 500px;
+    }
+
+    .about-area img {
+        width: 200px;
+        height: 150px;
+        margin-bottom: 50px;
+    }
+/*-------------------------about area */
+/*-------------------------careers area */
+    .careers-area .text-part {
+        margin-top: 70px;
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+    }
+
+    .careers-area h1 {
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    .careers-area h2 {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .careers-area p {
+        margin-bottom: 60px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .sub-background {
+        margin: 20px 0;
+        font-size: 35px;
+    }
+
+    .sub-background h2 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .sub-background h3 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #d89454;
+    }
+
+    .sub-background p {
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+
+    .sub-image img {
+        height: 200px;
+        width: 350px;
+    }
+
+    .job-list {
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        text-align: center;
+    }
+
+    .job-list h2 {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .job-list ul {
+        padding-left: 30px;
+        position: relative;
+        background: #fff;
+        margin-bottom: 50px;
+    }
+
+    .job-list ul li {
+        list-style: none;
+        padding: 5px;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        transition: transform 0.5s;
+    }
+
+    .job-list .row {
+        text-align: center;
+    }
+
+    .position-head {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .position-name {
+        font-size: 15px;
+    }
+/*-------------------------careers area */
+/*-------------------------footer */
+
+footer {
+    background: #1b262c;
+    color: white;
+    height: 900px;
+    bottom: 0px;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.main-content .box {
+    flex-basis: 100%;
+    padding: 30px 30px;
+}
+
+.box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content {
+    margin: 20px 0 0 0;
+}
+
+.box .content:before {
+    position: absolute;
+    content: '';
+    top: 60px;
+    height: 2px;
+    width: 80%;
+    background: #1a1a1a;
+} 
+
+.box .content:after {
+    position: absolute;
+    content: '';
+    top: 60px;
+    height: 2px;
+    width: 25%;
+    background:  #d89454;
+}
+
+.left .content p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #d89454;
+}
+
+.center .content .fas {
+    font-size: 20px;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #d89454;
+}
+
+.center .content .text {
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.center .content .phone {
+    margin: 10px 0;
+}
+
+.right form .text {
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: #656565;
+
+}
+
+.right form .message {
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea {
+    width: 100%;
+    font-size: 15px;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+    color: white;
+}
+
+.right form input:focus, 
+.right form textarea:focus {
+    outline-color: #d89454;
+}
+
+.right form input {
+    height: 35px;
+} 
+
+.right form .button {
+    margin-top: 10px;
+}
+
+.right form .button button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #d89454;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right form .button button:hover {
+    background: #151515;
+    color: #d89454;
+    border: 1px solid #d89454;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 10px;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #d89454;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+    background: none;
+}
+
+.footer-logo img {
+    height: 200px;
+    width: 150px;
+}
+
+.footer-logo h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*-------------------------footer */
+
 }
 
 @media (max-width: 858px) {
+/*-------------------------navigation bar */
     .check-button {
         display: block;
     }
 
-    ul {
+    .nav-bar ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         background: #1b262c;
-        top: 80px;
-        right: -100%;
+        top: 100px;
+        left: -100%;
         text-align: center;
         transition: all .5s;
     }
 
-    nav ul li {
+    .nav-bar nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    .nav-bar nav ul li a {
         font-size: 20px;
     }
 
-    a:hover, a.active {
+    .nav-bar a:hover, a.active {
         background: #d89454;
         color: #000000;
     }
 
-    #check:checked ~ ul {
-        right: 0;
+    .nav-bar #check:checked ~ ul {
+        left: 0;
     }
-
+/*-------------------------navigation bar */
+/*-------------------------header */
     header {
         background-image: url("../image/bg1.png");
         background-repeat: no-repeat;
@@ -600,5 +877,11 @@ footer {
         background-size: cover;
         background-position: center;
     }
+/*-------------------------header */
+/*-------------------------home area */
 
+/*-------------------------home area */
+/*-------------------------about area */
+
+/*-------------------------about area */
 }
