@@ -1,7 +1,8 @@
 function sendMail(event) {
     console.log(event)
     event.preventDefault();
-    var valid=validation()
+
+    var valid = validation();
 
     if(valid) {
         emailjs.send("gmail", "syafiq", {
