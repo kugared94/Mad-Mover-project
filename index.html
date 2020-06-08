@@ -47,22 +47,27 @@
                         <h1>Count Your Distance</h1>
                         <form id="maps" class="row quotation">
                             <div class="col-sm-2 quotation-form">
-                                <input type="text" id="from" placeholder="From:" class="form-control">
+                                <input type="text" id="from" name="origin" placeholder="Start Point" class="form-control">
                             </div>
 
                             <div class="col-sm-2 quotation-form">
-                                <input type="text" id="to" placeholder="Destination" class="form-control">
+                                <input type="text" id="to" name="destination" placeholder="Destination" class="form-control">
                             </div>
 
-                            <div class="col-sm-2 maps-button">
-                                <button class="btn btn-info btn-lg" onclick="calcRoute();">Submit</button>
+                            <div class="col-sm-2">
+                                <button class="maps-button" type="button" onclick="clearRoute();">Clear</button>
                             </div>
+
+                            <div class="col-sm-2">
+                                <button class="maps-button" type="button" onclick="calcRoute();">Submit</button>
+                            </div>
+
+                            <div id="output" class="result-distance"></div>
 
                         </form>
-                        <div class="container-fluid">
-                            <div id="googleMap"></div>
-                            <div id="output"></div>
-                        </div>
+
+                        <div class="map-size" id="google-map"></div>
+                        
                     </div>
                 </div>
 
@@ -166,8 +171,6 @@
                             </div>
 
                         </form>
-                        <h3>Our Locations!</h3>
-                        <div id="map"></div>
 
                     </div>
                 </div>
@@ -226,15 +229,12 @@
 
         </footer>
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/googleMaps.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4CzSPZ1TYccv8aQcSnVbSZeGZetiwmu4&libraries=places"></script>
+        <script src="assets/js/map-distance.js"></script>
 
         <script src="assets/js/script.js"></script>
         <script src="assets/js/sendEmail.js"></script>
-
-        <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4CzSPZ1TYccv8aQcSnVbSZeGZetiwmu4&callback=initMap"></script>
-        <script src="assets/js/map.js"></script>
     </body>
 </html>
 
