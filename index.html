@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
             (function(){
@@ -42,9 +43,26 @@
 
             <div class="row ">
                 <div class="col-12 home-area" id="home">
-                    <div class="text-part">
-                        <h1>Home Area</h1>
-                        <p>Lorem ipsum</p>
+                    <div class="text-part border-background">
+                        <h1>Count Your Distance</h1>
+                        <form id="maps" class="row quotation">
+                            <div class="col-sm-2 quotation-form">
+                                <input type="text" id="from" placeholder="From:" class="form-control">
+                            </div>
+
+                            <div class="col-sm-2 quotation-form">
+                                <input type="text" id="to" placeholder="Destination" class="form-control">
+                            </div>
+
+                            <div class="col-sm-2 maps-button">
+                                <button class="btn btn-info btn-lg" onclick="calcRoute();">Submit</button>
+                            </div>
+
+                        </form>
+                        <div class="container-fluid">
+                            <div id="googleMap"></div>
+                            <div id="output"></div>
+                        </div>
                     </div>
                 </div>
 
@@ -148,6 +166,8 @@
                             </div>
 
                         </form>
+                        <h3>Our Locations!</h3>
+                        <div id="map"></div>
 
                     </div>
                 </div>
@@ -156,7 +176,7 @@
         </section>
 
         <footer class="container-fluid">
-            <div class="row no-gutters main-content">
+            <div class="row main-content">
                 <div class="col-sm-4 left box">
                     <h2>About Us</h2>
                     <div class="content">
@@ -206,9 +226,18 @@
 
         </footer>
 
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/googleMaps.js"></script>
+
         <script src="assets/js/script.js"></script>
         <script src="assets/js/sendEmail.js"></script>
+
+        <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4CzSPZ1TYccv8aQcSnVbSZeGZetiwmu4&callback=initMap"></script>
+        <script src="assets/js/map.js"></script>
     </body>
 </html>
+
+
 
                     
