@@ -33,6 +33,9 @@ What is Mad's Mover ?
 
 <img src="assets/image/4.jpg" width="400">
     - On the contact area, we provide email box for customer ask further enquiries.
+    
+<img src="assets/image/5.jpg" width="400">
+    - On the footer, we provide all the social media link, and location information of the company.
 
 
 ## Technologies Used
