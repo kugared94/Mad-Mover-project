@@ -22,18 +22,17 @@ What is Mad's Mover ?
 
 ## Feature
 
-<img src="assets/image/1.jpg" width="100">
+<img src="assets/image/1.jpg" width="400">
     - On arriving at the page for the first time, this word have been shown to inform the user what this website is about.
 
-<img src="assets/image/2.jpg" width="100">
-    - On the upper of the footer, the picture is show to the user the example of the previous project that have been done by Mad's Lab team.
-    - In the footer area, the information of the company detail have given to the user for them to contact Mad's Lab.
+<img src="assets/image/2.jpg" width="400">
+    - On the Count Distance, we provide customer map to count distance from starting poin to destination.
 
-<img src="assets/image/3.jpg" width="100">
-    - On the price page, the Mad's Lab price list is given to the user for the rate price based on the situation.
+<img src="assets/image/3.jpg" width="400">
+    - on the careers area, we shown avaiable position to those who seeking a job in the company.
 
-<img src="assets/image/4.jpg" width="100">
-    - On the last page, in the application page which is if the user want to hire or want to join our team, they can fill in the form. All the data will be collected.
+<img src="assets/image/4.jpg" width="400">
+    - On the contact area, we provide email box for customer ask further enquiries.
 
 
 ## Technologies Used
@@ -57,6 +56,12 @@ What is Mad's Mover ?
 
 * W3c Validator
   - Using this website to check all the error in html.
+  
+* Google Cloud Platform
+  - Using this website to get the APi key for the google map.
+  
+* EmailJS
+  - Using this website get the APi key for the contact area.
 
 ## Deployment
 This project was developed using the GitPod, and pushed to GitHub using the built in function within GitPod.
@@ -71,7 +76,7 @@ To deploy the Mad's Lab, to GitHub Pages from its GitHub repository, the followi
   - Scroll back down to the GitHub Pages section.
   - You should now have a deployed link.
   
-The Mad's Lab project made use of several branches for development, testing and bug fixing. The Master Branch has always been the one deployed to GitHUb Pages. When displaying the website life, the developer tries to keep the master branch to optimal code only. At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
+The Mad's mover project made use of several branches for development, testing and bug fixing. The Master Branch has always been the one deployed to GitHUb Pages. When displaying the website life, the developer tries to keep the master branch to optimal code only. At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
 
 ## Credits
 
@@ -80,17 +85,16 @@ The Mad's Lab project made use of several branches for development, testing and 
 
 **Media**
 * Image
-  - Most the building images in this project is own by Muhammad Syafiq previous architecture degree project.
-  - The personal computer image by Muhammad Syafiq life experience.
+  - Most the building images in this project is own by Muhammad Syafiq.
   - The Google Images and are used for project purposes only.
   
 **Code**
-* Reference code for the html and css are referred from W3School post. 
+* Reference code for the html, css, and javascript are referred from W3School, Bootstrap, and stack overflow. 
 
 ## Acknowledgements
 Special thanks to:
 * Code Institute Mentor, Miss Antonija Simic for his time and support in explaining and demonstrating areas of code this developer was struggling to understand.
 * Code Institute Tutor, for their time and support in explaining and demonstrating areas of code this developer was struggling to understand. 
  
-A fully responsive website using CSS and HTML5
+A fully responsive website using CSS, javascript, and HTML5
 
