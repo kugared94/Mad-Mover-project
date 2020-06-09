@@ -13,6 +13,7 @@ Mad's Lab is a company that serve multiple service to the customer in architectu
 * [Deployment](#Deployment)
 * [Credits](#Credits)
 * [Acknowledgements](#Acknowledgements)
+* [Disclaimer](#Disclaimer)
 
 ## Ux
 What is Mad's Mover ?
@@ -95,9 +96,14 @@ The Mad's mover project made use of several branches for development, testing an
 * Reference code for the html, css, and javascript are referred from W3School, Bootstrap, and stack overflow. 
 
 ## Acknowledgements
+
 Special thanks to:
 * Code Institute Mentor, Miss Antonija Simic for his time and support in explaining and demonstrating areas of code this developer was struggling to understand.
 * Code Institute Tutor, for their time and support in explaining and demonstrating areas of code this developer was struggling to understand. 
+
+## Disclaimer
+
+All the content of this website, including the images used, are for educational purposes only.
  
 A fully responsive website using CSS, javascript, and HTML5
 
