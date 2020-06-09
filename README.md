@@ -85,7 +85,7 @@ The Mad's mover project made use of several branches for development, testing an
 ## Credits
 
 **Content**
-* All the content in this project is written by muhammad syafiq.
+* All the content in this project is written by muhammad syafiq, and for the javascript is refer from stack overflow and google maps platform.
 
 **Media**
 * Image
