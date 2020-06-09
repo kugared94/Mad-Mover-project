@@ -4,7 +4,7 @@
 
 **Mad's Mover.**
 
-Mad's Lab is a company that serve multiple service to the customer in architecture and web design field.
+Mad's Mover is a company that serve multiple service to the customer in architecture and web design field.
 
 ## Table of contents
 * [Ux](#Ux)
