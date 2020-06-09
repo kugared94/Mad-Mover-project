@@ -2,7 +2,7 @@
 
 <img src="assets/image/logo-2.png" width="100">
 
-**Mad's Lab.**
+**Mad's Mover.**
 
 Mad's Lab is a company that serve multiple service to the customer in architecture and web design field.
 
