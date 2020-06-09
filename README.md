@@ -27,7 +27,7 @@ What is Mad's Mover ?
     - On arriving at the page for the first time, this word have been shown to inform the user what this website is about.
 
 <img src="assets/image/2.jpg" width="400">
-    - On the Count Distance, we provide customer map to count distance from starting poin to destination.
+    - On the Count Distance, we provide customer map to count distance from starting point to destination, this code have been refer to developers.google.com.
 
 <img src="assets/image/3.jpg" width="400">
     - on the careers area, we shown avaiable position to those who seeking a job in the company.
